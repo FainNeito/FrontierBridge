@@ -6,6 +6,7 @@ import java.util.*;
 
 /** Native snapshot-8 command serialization to the 26.3 Brigadier wire format. */
 final class CommandTreeTranslator {
+    private static final Set<String> SERVER_ONLY_RESOURCES = Set.of("minecraft:advancement", "minecraft:recipe", "minecraft:worldgen/structure", "minecraft:worldgen/template_pool");
     private static final String[] SOURCE;
     private static final Map<String,Integer> TARGET=new HashMap<>();
     private static final Map<Integer,String> TARGET_NAMES=new HashMap<>();
@@ -64,11 +65,13 @@ final class CommandTreeTranslator {
                 int id=Types.VAR_INT.readPrimitive(input);bounded(id,0,SOURCE.length-1);String name=SOURCE[id],mapped=name;
                 if(Set.of("bool","double","float","integer","long","string").contains(name.substring(10)))mapped="brigadier:"+name.substring(10);
                 if(name.equals("minecraft:pattern"))mapped="brigadier:string";
-                if(name.equals("minecraft:resource")) {
+                // These server-owned registry entries are addressed by identifier on 26.3 clients.
+                // ResourceKeyArgument retains identifier parsing without requiring that registry.
+                if(name.equals("minecraft:resource") || name.equals("minecraft:resource_or_tag")) {
                     int propertyStart=input.readerIndex();
                     String registry=Types.STRING.read(input);
                     input.readerIndex(propertyStart);
-                    if (registry.equals("minecraft:advancement")) mapped = "minecraft:resource_key";
+                    if (SERVER_ONLY_RESOURCES.contains(registry)) mapped = name + "_key";
                 }
                 Integer target=TARGET.get(mapped);if(target==null)throw new IllegalArgumentException("Unmapped command argument "+name);
                 Types.VAR_INT.writePrimitive(output,target);
