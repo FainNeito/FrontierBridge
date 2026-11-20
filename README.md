@@ -17,3 +17,5 @@ Run the regression with the extracted vanilla 26.3 server JAR and its matching l
     python -B test_commands.py VIA_JAR SNAPSHOT_LIBRARIES VANILLA_26_3_SERVER_JAR VANILLA_26_3_LIBRARIES
 
 An optional final argument accepts a captured command-tree JSON fixture with a hex-encoded packet. The bundled fixtures cover the template-pool login failure, four server-only registries with both resource argument forms, and the ordinary item registry.
+
+GitHub Actions builds a JDK 25 review JAR and runs both fixtures on every pull request. CI compiles against the public ViaVersion 5.12.2 and Paper 26.2 API artifacts and validates the command tree with Mojang's native 26.3 decoder. The download URLs and SHA-256 hashes are recorded in `ci/inputs.json`. Successful runs attach the JAR to the workflow run. Deployment and authenticated gameplay tests remain separate.
