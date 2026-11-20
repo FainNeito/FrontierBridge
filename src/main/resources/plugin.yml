@@ -1,0 +1,15 @@
+name: FrontierBridge
+version: 0.24.9-snapshot8-candidate
+main: net.lumalyte.frontier.bridge.FrontierBridgePlugin
+api-version: '26.4'
+depend: [ViaVersion, ViaBackwards]
+description: Exact snapshot-8 compatibility candidate; authenticated lab or explicitly selected Bloom test server.
+commands:
+  frontierbridge:
+    description: Console-only development bridge status
+    permission: frontierbridge.admin
+permissions:
+  frontierbridge.admin:
+    default: op
+
+

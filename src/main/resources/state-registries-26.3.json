@@ -1,0 +1,326 @@
+{
+  "attributes": [
+    {
+      "id": 0,
+      "key": "minecraft:air_drag_modifier"
+    },
+    {
+      "id": 1,
+      "key": "minecraft:armor"
+    },
+    {
+      "id": 2,
+      "key": "minecraft:armor_toughness"
+    },
+    {
+      "id": 3,
+      "key": "minecraft:attack_damage"
+    },
+    {
+      "id": 4,
+      "key": "minecraft:attack_knockback"
+    },
+    {
+      "id": 5,
+      "key": "minecraft:attack_speed"
+    },
+    {
+      "id": 6,
+      "key": "minecraft:below_name_distance"
+    },
+    {
+      "id": 7,
+      "key": "minecraft:block_break_speed"
+    },
+    {
+      "id": 8,
+      "key": "minecraft:block_interaction_range"
+    },
+    {
+      "id": 9,
+      "key": "minecraft:bounciness"
+    },
+    {
+      "id": 10,
+      "key": "minecraft:burning_time"
+    },
+    {
+      "id": 11,
+      "key": "minecraft:camera_distance"
+    },
+    {
+      "id": 12,
+      "key": "minecraft:explosion_knockback_resistance"
+    },
+    {
+      "id": 13,
+      "key": "minecraft:entity_interaction_range"
+    },
+    {
+      "id": 14,
+      "key": "minecraft:fall_damage_multiplier"
+    },
+    {
+      "id": 15,
+      "key": "minecraft:flying_speed"
+    },
+    {
+      "id": 16,
+      "key": "minecraft:follow_range"
+    },
+    {
+      "id": 17,
+      "key": "minecraft:friction_modifier"
+    },
+    {
+      "id": 18,
+      "key": "minecraft:gravity"
+    },
+    {
+      "id": 19,
+      "key": "minecraft:jump_strength"
+    },
+    {
+      "id": 20,
+      "key": "minecraft:knockback_resistance"
+    },
+    {
+      "id": 21,
+      "key": "minecraft:luck"
+    },
+    {
+      "id": 22,
+      "key": "minecraft:max_absorption"
+    },
+    {
+      "id": 23,
+      "key": "minecraft:max_health"
+    },
+    {
+      "id": 24,
+      "key": "minecraft:mining_efficiency"
+    },
+    {
+      "id": 25,
+      "key": "minecraft:movement_efficiency"
+    },
+    {
+      "id": 26,
+      "key": "minecraft:movement_speed"
+    },
+    {
+      "id": 27,
+      "key": "minecraft:name_tag_distance"
+    },
+    {
+      "id": 28,
+      "key": "minecraft:oxygen_bonus"
+    },
+    {
+      "id": 29,
+      "key": "minecraft:safe_fall_distance"
+    },
+    {
+      "id": 30,
+      "key": "minecraft:scale"
+    },
+    {
+      "id": 31,
+      "key": "minecraft:sneaking_speed"
+    },
+    {
+      "id": 32,
+      "key": "minecraft:spawn_reinforcements"
+    },
+    {
+      "id": 33,
+      "key": "minecraft:step_height"
+    },
+    {
+      "id": 34,
+      "key": "minecraft:submerged_mining_speed"
+    },
+    {
+      "id": 35,
+      "key": "minecraft:sweeping_damage_ratio"
+    },
+    {
+      "id": 36,
+      "key": "minecraft:tempt_range"
+    },
+    {
+      "id": 37,
+      "key": "minecraft:water_movement_efficiency"
+    },
+    {
+      "id": 38,
+      "key": "minecraft:waypoint_transmit_range"
+    },
+    {
+      "id": 39,
+      "key": "minecraft:waypoint_receive_range"
+    }
+  ],
+  "effects": [
+    {
+      "key": "minecraft:speed",
+      "id": 0
+    },
+    {
+      "key": "minecraft:slowness",
+      "id": 1
+    },
+    {
+      "key": "minecraft:haste",
+      "id": 2
+    },
+    {
+      "key": "minecraft:mining_fatigue",
+      "id": 3
+    },
+    {
+      "key": "minecraft:strength",
+      "id": 4
+    },
+    {
+      "key": "minecraft:instant_health",
+      "id": 5
+    },
+    {
+      "key": "minecraft:instant_damage",
+      "id": 6
+    },
+    {
+      "key": "minecraft:jump_boost",
+      "id": 7
+    },
+    {
+      "key": "minecraft:nausea",
+      "id": 8
+    },
+    {
+      "key": "minecraft:regeneration",
+      "id": 9
+    },
+    {
+      "key": "minecraft:resistance",
+      "id": 10
+    },
+    {
+      "key": "minecraft:fire_resistance",
+      "id": 11
+    },
+    {
+      "key": "minecraft:water_breathing",
+      "id": 12
+    },
+    {
+      "key": "minecraft:invisibility",
+      "id": 13
+    },
+    {
+      "key": "minecraft:blindness",
+      "id": 14
+    },
+    {
+      "key": "minecraft:night_vision",
+      "id": 15
+    },
+    {
+      "key": "minecraft:hunger",
+      "id": 16
+    },
+    {
+      "key": "minecraft:weakness",
+      "id": 17
+    },
+    {
+      "key": "minecraft:poison",
+      "id": 18
+    },
+    {
+      "key": "minecraft:wither",
+      "id": 19
+    },
+    {
+      "key": "minecraft:health_boost",
+      "id": 20
+    },
+    {
+      "key": "minecraft:absorption",
+      "id": 21
+    },
+    {
+      "key": "minecraft:saturation",
+      "id": 22
+    },
+    {
+      "key": "minecraft:glowing",
+      "id": 23
+    },
+    {
+      "key": "minecraft:levitation",
+      "id": 24
+    },
+    {
+      "key": "minecraft:luck",
+      "id": 25
+    },
+    {
+      "key": "minecraft:unluck",
+      "id": 26
+    },
+    {
+      "key": "minecraft:slow_falling",
+      "id": 27
+    },
+    {
+      "key": "minecraft:conduit_power",
+      "id": 28
+    },
+    {
+      "key": "minecraft:dolphins_grace",
+      "id": 29
+    },
+    {
+      "key": "minecraft:bad_omen",
+      "id": 30
+    },
+    {
+      "key": "minecraft:hero_of_the_village",
+      "id": 31
+    },
+    {
+      "key": "minecraft:darkness",
+      "id": 32
+    },
+    {
+      "key": "minecraft:trial_omen",
+      "id": 33
+    },
+    {
+      "key": "minecraft:raid_omen",
+      "id": 34
+    },
+    {
+      "key": "minecraft:wind_charged",
+      "id": 35
+    },
+    {
+      "key": "minecraft:weaving",
+      "id": 36
+    },
+    {
+      "key": "minecraft:oozing",
+      "id": 37
+    },
+    {
+      "key": "minecraft:infested",
+      "id": 38
+    },
+    {
+      "key": "minecraft:breath_of_the_nautilus",
+      "id": 39
+    }
+  ]
+}
