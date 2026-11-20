@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://piston-data.mojang.com/v1/objects/33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c/server.jar",
+    "sha256": "d052f14d7a173734fba553711e5b570162e2f2a313267ee31a21b975a679be64",
+    "file": "server-bundle.jar"
+  },
+  {
+    "url": "https://github.com/ViaVersion/ViaVersion/releases/download/5.12.2/ViaVersion-5.12.2.jar",
+    "sha256": "24e4876fefe73e08a4c87cd6c457ee0916e62dd69656631caf41e26f909d504b",
+    "file": "via.jar"
+  },
+  {
+    "url": "https://artifactory.papermc.io/ui/api/v1/download/universe/io/papermc/paper/paper-api/26.2.build.135-stable/paper-api-26.2.build.135-stable.jar",
+    "sha256": "59aa3e9ef2103b5a0e35022a3877f23088f39d02652078607fbd8c806af64e89",
+    "file": "compile/paper-api-26.2.build.135-stable.jar"
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-api/5.2.0/adventure-api-5.2.0.jar",
+    "sha256": "7e52fe7190be3e87b3b3f71712cfa12315fcd27109f302a7b440c12f01fae827",
+    "file": "compile/adventure-api-5.2.0.jar"
+  },
+  {
+    "url": "https://repo.maven.apache.org/maven2/net/kyori/adventure-key/5.2.0/adventure-key-5.2.0.jar",
+    "sha256": "0184d173200e2eef8fbc791f622d1d58fd459f8930c616b5a4fe79e83eda6c55",
+    "file": "compile/adventure-key-5.2.0.jar"
+  },
+  {
+    "url": "https://artifactory.papermc.io/ui/api/v1/download/universe/net/md-5/bungeecord-chat/1.21-R0.2-deprecated%2Bbuild.21/bungeecord-chat-1.21-R0.2-deprecated%2Bbuild.21.jar",
+    "sha256": "ce930b3ee048520a0ab538eb8d1627b301367fc1b300837235387aded6d89ba1",
+    "file": "compile/bungeecord-chat-1.21-R0.2-deprecated+build.21.jar"
+  }
+]

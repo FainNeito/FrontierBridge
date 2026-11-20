@@ -1,0 +1,30 @@
+name: FrontierBridge CI
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  dawn-login:
+    name: Build JAR and test Dawn 26.3 login
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Prepare verified dependencies
+        run: python3 ci/prepare.py
+      - name: Build FrontierBridge and decode the Dawn command fixtures
+        run: |
+          deps=build/ci-inputs
+          python3 -B test_commands.py "$deps/via.jar" "$deps/compile" "$deps/server.jar" "$deps/compile/vanilla"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FrontierBridge-PR-${{ github.event.pull_request.number }}
+          path: build/FrontierBridge.jar
+          if-no-files-found: error
